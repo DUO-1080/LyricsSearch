@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import Spinner from "../layout/Spinner";
 import { Link } from "react-router-dom";
+import Moment from "react-moment";
 
 export default class Lyric extends Component {
   state = {
@@ -75,7 +76,8 @@ export default class Lyric extends Component {
                 {track.explicit === 0 ? "NO" : "YES"}
               </li>
               <li className="list-group-item">
-                <strong>Release Date: </strong> {track.updated_time}
+                <strong>Release Date: </strong>{" "}
+                <Moment format="YYYY-MM-DD">{track.updated_time}</Moment>
               </li>
             </ul>
           </div>
