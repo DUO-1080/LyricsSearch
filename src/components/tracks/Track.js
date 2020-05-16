@@ -14,16 +14,14 @@ export default function Track(props) {
               <i className="fas fa-play"></i> Track:
             </strong>
             {track.track_name}
-          </p>
-          <br />
-          <p className="card-text">
+            <br />
             <strong>
-              <i className="fas fa-compat-disc"></i> Album:
+              <i className="fas fa-compact-disc"></i> Album:
             </strong>
             {track.album_name}
           </p>
           <Link
-            to={`lyric/track/${track.track_id}`}
+            to={`lyrics/track/${track.track_id}`}
             className="btn btn-block btn-dark"
           >
             <i className="fas fa-chevron-right"></i>View Lyrics
